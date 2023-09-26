@@ -1,5 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import {links} from "./images-links"
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import RestoreIcon from "@mui/icons-material/Restore";
@@ -18,9 +18,9 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+       {links.map((item, i) => ( 
+        <BottomNavigationAction key={i} label={item.label} icon={ <img src={item.imgSrc} className="links-img" />} />
+        ))}
       </BottomNavigation>
     </div>
   );

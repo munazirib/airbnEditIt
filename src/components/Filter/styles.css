@@ -1,8 +1,9 @@
 .filter-div {
   border-top: 1px solid var(--grey);
+  text-align: center;
   padding: 1rem 3rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
   align-items: center;
   overflow-x: auto;
 }
@@ -43,7 +44,6 @@
 }
 @media only screen and (max-width: 800px) {
   .filter-div {
-    padding: 0.5rem;
-    padding-top: 1.5rem;
+  display: none;
   }
 }
