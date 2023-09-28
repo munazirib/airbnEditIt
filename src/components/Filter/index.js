@@ -4,6 +4,7 @@ import "./styles.css";
 
 function Filter({ selectedFilter, setSelectedFilter }) {
   return (
+   <center>
     <div className="filter-div">
       {links.map((item, i) => (
         <div
@@ -22,6 +23,7 @@ function Filter({ selectedFilter, setSelectedFilter }) {
         </div>
       ))}
     </div>
+    </center> 
   );
 }
 
