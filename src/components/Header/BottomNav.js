@@ -1,5 +1,6 @@
 import * as React from "react";
 import {links} from "./images-links"
+import MobileSearchBar from '../MobileSearchBar'
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 
@@ -9,6 +10,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <div className="bottom-nav">
+      <MobileSearchBar/>
       <BottomNavigation
         showLabels
         value={value}

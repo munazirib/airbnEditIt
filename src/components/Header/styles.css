@@ -30,11 +30,28 @@
   cursor: pointer;
 }
 
-.search-bar-text {
+.search-bar-input {
+  width: 20vw;
   font-size: 0.85rem;
   font-weight: 600;
   border-right: 1px solid var(--grey);
   padding-right: 0.5rem;
+}
+.search-bar-input input {
+  width: 95%;
+  height: 200%;
+  border-color: #004AAD;
+  color:#004AAD;
+  border-width: 1px;
+  border-radius: 5px;
+}
+::placeholder {
+  color: #004AAD;;
+}
+
+.search-bar-input input:focus {
+  outline: none;
+  border-width: 3px ;
 }
 
 .search-bar-text2 {
@@ -48,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme);
+  background-color: #004AAD;
   padding: 0.25rem;
   border-radius: 50%;
   color: var(--white);

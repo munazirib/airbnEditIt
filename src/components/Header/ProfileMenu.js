@@ -8,6 +8,7 @@ import "./styles.css";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const logginStatus= false;
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -17,6 +18,8 @@ export default function BasicMenu() {
   };
 
   return (
+   <div>
+    { logginStatus == false ?
     <div>
       <div
         id="basic-button"
@@ -45,12 +48,10 @@ export default function BasicMenu() {
           },
         }}
       >
-        <MenuItem className="menu-items" onClick={handleClose}>
-          Signup
+       <MenuItem className="menu-items" onClick={handleClose}>
+          click to login and signup
         </MenuItem>
-        <MenuItem onClick={handleClose} className="menu-items">
-          Login
-        </MenuItem>
+       
         <div
           style={{
             height: "1px",
@@ -68,6 +69,9 @@ export default function BasicMenu() {
           Help
         </MenuItem>
       </Menu>
+    </div>:
+    ''
+    }
     </div>
   );
 }
