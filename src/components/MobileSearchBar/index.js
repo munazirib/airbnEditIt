@@ -4,9 +4,7 @@ import "./styles.css";
 function MobileSearchBar() {
   return <div className="mobile-search-bar">
        <input id="search" type="text" name="search" placeholder="search products and services"/>
-       <span className="mobile-search-icon-div">
-       <i className="fa-solid fa-magnifying-glass" style={{color:"#ffffff"}}></i>
-        </span>
+       <span><i className="fa-solid fa-magnifying-glass search-icon" style={{color:"#ffffff"}}></i></span>
       </div>;
 }
 

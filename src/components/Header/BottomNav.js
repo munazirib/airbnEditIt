@@ -3,7 +3,7 @@ import {links} from "./images-links"
 import MobileSearchBar from '../MobileSearchBar'
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-
+import "./styles.css";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);

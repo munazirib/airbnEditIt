@@ -1,28 +1,20 @@
 @media only screen and (max-width: 800px) {
   .mobile-search-bar {
-    background-color: white;
-    gap: 0.5;
-    border: 1px solid var(--grey);
-    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    background-color: rgba(255, 255, 255, 0);
+    width: 70%;
+    margin-bottom: 10%;
   }
-  
-  .mobile-search-bar:hover {
-    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%);
-    transition: all 0.2s;
-    cursor: pointer;
-  }
-  .mobile-search-icon-div {
-    width: 100px;
-    height:100px;
+  .search-icon{
+    width: 25px;
+    height: 25px;
     background-color: #004AAD;
-  
+    padding-top: 2% ;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
     border-radius: 50%;
-    color: var(--white);
   }
-
-  .mobile-search-bar input {
-    padding: 0;
-  }
+ 
  
   ::placeholder {
     color: #004AAD;;
