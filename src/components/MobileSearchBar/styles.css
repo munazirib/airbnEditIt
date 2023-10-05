@@ -1,8 +1,12 @@
+@font-face {
+  font-family: search;
+  src: url(../Header/AirbnbCereal_W_Blk.otf);
+}
 @media only screen and (max-width: 800px) {
   .mobile-search-bar {
     background-color: rgba(255, 255, 255, 0);
-    width: 70%;
-    margin-bottom: 10%;
+    width: 100%;
+    margin-bottom: 3%;
   }
   .search-icon{
     width: 25px;
@@ -11,6 +15,9 @@
     padding-top: 2% ;
     padding-left: 1%;
     padding-right: 1%;
+    position: fixed;
+    bottom:7.5%;
+    left:65%;
     text-align: center;
     border-radius: 50%;
   }
@@ -23,5 +30,17 @@
  
   .mobile-search-bar {
     display: block;
+  }
+  .mobile-search-bar input {
+    margin-left:22.5%;
+    display: block;
+    border-radius: 5PX 0 0 5PX;
+    text-align: center;
+    border-color: #004bad00;
+    color:#004AAD;
+    font-family: search
+  }
+  .mobile-search-bar input:focus{
+    outline: none;
   }
 }
