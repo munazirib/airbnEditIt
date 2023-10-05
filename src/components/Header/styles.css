@@ -1,3 +1,7 @@
+@font-face {
+  font-family: search;
+  src: url(./AirbnbCereal_W_Blk.otf);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -25,7 +29,7 @@
 }
 
 .search-bar:hover {
-  box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px rgb(0 0 0 / 10%);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 4px 12px #004badc2;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -40,10 +44,9 @@
 .search-bar-input input {
   width: 95%;
   height: 200%;
-  border-color: #004AAD;
+  border-color: #004bad00;
   color:#004AAD;
-  border-width: 1px;
-  border-radius: 5px;
+  font-family: search
 }
 ::placeholder {
   color: #004AAD;;
@@ -51,7 +54,6 @@
 
 .search-bar-input input:focus {
   outline: none;
-  border-width: 3px ;
 }
 
 .search-bar-text2 {

@@ -10,7 +10,7 @@ function Header() {
     <div className="navbar">
       <img src={logo} alt="logo" className="navbar-logo" />
       <div className="search-bar">
-        <div className="search-bar-input"><div><input id="search" type="text" name="search" placeholder="   search products and services"/></div></div>
+        <div className="search-bar-input"><div><input id="search" type="text" name="search" placeholder="   Search for Products and Services"/></div></div>
         <div className="search-icon-div">
           <SearchRoundedIcon className="search-icon" />
         </div>
