@@ -48,6 +48,7 @@
   color:#004AAD;
   font-family: search
 }
+.loginHeader{display:flex;flex-flow:row;border-width:0 0 1px 0;border-style:solid;border-color:#004AAD}
 ::placeholder {
   color: #004AAD;;
 }
@@ -112,7 +113,14 @@
 .bottom-nav {
   display: none;
 }
-
+.LoginSignupDialog{
+  width:50vw;
+  height: fit-content;
+}
+.LoginSignupDialogContent{
+  width: 100%;
+  height: fit-content;
+}
 @media only screen and (max-width: 800px) {
   .search-bar,
   .airbnb-your-home {
